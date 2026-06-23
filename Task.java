@@ -7,27 +7,27 @@
  */
 public class Task
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    // Name of the task
+    private String taskName="";
 
-    /**
-     * Constructor for objects of class Task
-     */
-    public Task()
-    {
-        // initialise instance variables
-        x = 0;
+    // Short description of task
+    private String taskDescription="";
+
+    // How important this task is
+    private int taskValue=0;
+
+    // If it's in todo, doing, or completed (1,2,3);
+    private int taskCatagory=1;
+
+    
+
+    public Task(){
+        System.out.println("New Task Created!");
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public void newTask(int taskValue){
+        this.taskValue = taskValue;
+    }
+    public int getTaskValue(){
+        return(this.taskValue);
     }
 }
