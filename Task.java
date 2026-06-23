@@ -12,16 +12,11 @@ public class Task
     // If it's in todo, doing, or completed (1,2,3);
     private int taskCatagory=1;
 
-    
-
     public Task(String taskName, String taskDescription, int taskValue){
         this.taskName = taskName;
         this.taskDescription = taskDescription;
         this.taskValue = taskValue;
-        
     }
-
-    
 
     public String getTaskName(){
         return(this.taskName);
@@ -34,8 +29,6 @@ public class Task
     public int getTaskValue(){
         return(this.taskValue);
     }
-
-    
 
     public void changeTaskCatagory(){
         // add code to change the catagory

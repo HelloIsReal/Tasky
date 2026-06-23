@@ -25,9 +25,9 @@ public class taskManager
         tasks.add(newTask);
     }
 
-    public void displayTasks(){
+    public void printTasks(){
         for(Task currentTask : tasks){
-            System.out.println("Task name: "currentTask.getTaskName()+", Task description: "+currentTask.getTaskDescription();
+            System.out.println("Task name: "+currentTask.getTaskName()+", Task description: "+currentTask.getTaskDescription()+", Task Value: "+currentTask.getTaskValue());
         }
     }
 }
