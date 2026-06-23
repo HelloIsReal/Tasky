@@ -1,10 +1,3 @@
-
-/**
- * Write a description of class Task here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
 public class Task
 {
     // Name of the task
@@ -21,13 +14,30 @@ public class Task
 
     
 
-    public Task(){
-        System.out.println("New Task Created!");
-    }
-    public void newTask(int taskValue){
+    public Task(String taskName, String taskDescription, int taskValue){
+        this.taskName = taskName;
+        this.taskDescription = taskDescription;
         this.taskValue = taskValue;
+        
     }
+
+    
+
+    public String getTaskName(){
+        return(this.taskName);
+    }
+
+    public String getTaskDescription(){
+        return(this.taskDescription);
+    }
+
     public int getTaskValue(){
         return(this.taskValue);
+    }
+
+    
+
+    public void changeTaskCatagory(){
+        // add code to change the catagory
     }
 }
